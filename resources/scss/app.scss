@@ -1,1 +1,30 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.img-cont{
+   
+    overflow: hidden;
+
+    img{
+        transition: 0.5s;
+    }
+
+    img:hover{
+
+        transform: scale(1.1);
+
+    }
+
+}

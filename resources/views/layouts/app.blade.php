@@ -17,12 +17,16 @@
 
 <body>
 
-   <header>@include('partials.header')</header>
-<main>
+   <header>
+    @include('partials.header')
+</header>
+
+
+<main class="mt-5">
     @yield('cards')
 </main>
 
-<footer>
+<footer class="mt-5">
     @include('partials.footer')
 </footer>
 
