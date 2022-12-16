@@ -17,8 +17,14 @@
 
 <body>
 
-   
-adad
+   <header>@include('partials.header')</header>
+<main>
+    @yield('cards')
+</main>
+
+<footer>
+    @include('partials.footer')
+</footer>
 
 </body>
 
