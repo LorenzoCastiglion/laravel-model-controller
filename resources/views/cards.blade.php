@@ -1,11 +1,19 @@
 @extends('layouts.app')
 
 @section('cards')
-<ul>
-    @foreach ($movies as $movie)
 
-    <li>{{$movie->title}}</li>
-        
-    @endforeach
-</ul>
+
+ <div class="row justify-content-center gap-3 ">
+     @foreach ($movies as $movie)
+     <div class="card p-0" style="width: 18rem;">
+        <img src="{{$movie->image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-text">{{$movie->title}}</h3>
+          <p>{{$movie->original_title}}</p>
+          <p>{{$movie->date}}</p>
+        </div>
+      </div>       
+     @endforeach
+ </div>
+
 @endsection
